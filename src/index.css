@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bold';
+  src:
+    local('Anuphan-Bold'),
+    url('./assets/fonts/Anuphan-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ExtraLight';
+  src:
+    local('Anuphan-ExtraLight'),
+    url('./assets/fonts/Anuphan-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Light';
+  src:
+    local('Anuphan-Light'),
+    url('./assets/fonts/Anuphan-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Medium';
+  src:
+    local('Anuphan-Medium'),
+    url('./assets/fonts/Anuphan-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Regular';
+  src:
+    local('Anuphan-Regular'),
+    url('./assets/fonts/Anuphan-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SemiBold';
+  src:
+    local('Anuphan-SemiBold'),
+    url('./assets/fonts/Anuphan-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Thin';
+  src:
+    local('Anuphan-Thin'),
+    url('./assets/fonts/Anuphan-Thin.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+};
