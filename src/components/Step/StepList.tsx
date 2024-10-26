@@ -1,4 +1,3 @@
-import React from 'react';
 import StepItem from './StepItem';
 import { Step } from '../../@types/step.type';
 
@@ -30,9 +29,9 @@ const steps: Step[] = [
 
 function StepList({}: Props) {
   return (
-    <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 extraLarge:grid-cols-4 gap-4'>
+    <div className='grid grid-cols-1 gap-4 tablet:grid-cols-2 laptop:grid-cols-2 extraLarge:grid-cols-4'>
       {steps.map((step, index) => (
-        <StepItem key={index} step={step}/>
+        <StepItem key={index} step={step} />
       ))}
     </div>
   );

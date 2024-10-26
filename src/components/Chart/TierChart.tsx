@@ -1,18 +1,16 @@
-import React from 'react';
-
 const TierChart = () => {
   return (
-    <div className='bg-[#0a0f1f] min-h-screen flex flex-col items-center justify-center p-6'>
+    <div className='flex min-h-screen flex-col items-center justify-center bg-[#0a0f1f] p-6'>
       {/* Chart Line */}
-      <div className='relative w-full max-w-2xl h-64'>
+      <div className='max-w-2xl relative h-64 w-full'>
         {/* Curve (Use background gradient and divs to mimic the curve) */}
         <div className='absolute inset-0'>
           {/* Background gradient for the curve */}
-          <div className='bg-gradient-to-r from-transparent via-blue-700 to-transparent h-2 w-full mt-24 opacity-75'></div>
+          <div className='mt-24 h-2 w-full bg-gradient-to-r from-transparent via-blue-700 to-transparent opacity-75'></div>
         </div>
 
         {/* Tooltip */}
-        <div className='absolute left-[70%] top-20 p-4 bg-[#1a2a48] rounded-lg text-white shadow-lg text-sm'>
+        <div className='absolute left-[70%] top-20 rounded-lg bg-[#1a2a48] p-4 text-sm text-white shadow-lg'>
           <p>F0 (Rebate): 5%</p>
           <p>F1 (Commission): 35%</p>
           <p>F2 (Commission): 10%</p>
@@ -23,7 +21,7 @@ const TierChart = () => {
       </div>
 
       {/* Tier Icons */}
-      <div className='flex justify-between w-full max-w-2xl mt-10'>
+      <div className='max-w-2xl mt-10 flex w-full justify-between'>
         {tiers.map((tier) => (
           <TierIcon key={tier.level} {...tier} />
         ))}
@@ -32,14 +30,14 @@ const TierChart = () => {
   );
 };
 
-const TierIcon = ({ level, color }: {level: any, color: any}) => (
+const TierIcon = ({ level, color }: { level: any; color: any }) => (
   <div className='flex flex-col items-center'>
     <div
-      className={`w-14 h-14 ${color} rounded-full flex items-center justify-center text-white text-xl font-bold`}
+      className={`h-14 w-14 ${color} flex items-center justify-center rounded-full text-xl font-bold text-white`}
     >
       {level}
     </div>
-    <p className='text-gray-300 mt-2'>Tier {level}</p>
+    <p className='mt-2 text-gray-300'>Tier {level}</p>
   </div>
 );
 

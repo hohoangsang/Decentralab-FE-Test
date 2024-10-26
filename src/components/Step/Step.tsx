@@ -1,4 +1,3 @@
-import React from 'react';
 import StepList from './StepList';
 
 type Props = {};
@@ -8,13 +7,13 @@ function Step({}: Props) {
     <section className='mx-auto max-w-maxWidthSection bg-transparent'>
       <div className='m-[32px]'>
         <div className='flex flex-col justify-center tablet:justify-start'>
-          <div className='text-ghostWhite flex items-center tablet:gap-4 gap-2 mb-6 mx-auto tablet:mx-0'>
+          <div className='mx-auto mb-6 flex items-center gap-2 text-ghostWhite tablet:mx-0 tablet:gap-4'>
             <img
               srcSet='/images/LightbulbFilament.png 2x'
               alt='LightbulbFilament'
-              className='shrink-0 desktop:w-[48px] desktop:h-[48px] tablet:w-[36px] tablet:h-[36px] w-[30px] h-[30px] '
+              className='h-[30px] w-[30px] shrink-0 tablet:h-[36px] tablet:w-[36px] desktop:h-[48px] desktop:w-[48px]'
             />
-            <h2 className='leading-primaryLineHeight font-primaryMedium tablet:text-[1.8rem] text-[1.5rem] desktop:text-[2rem]'>
+            <h2 className='font-primaryMedium text-[1.5rem] leading-primaryLineHeight tablet:text-[1.8rem] desktop:text-[2rem]'>
               How It Works?
             </h2>
           </div>

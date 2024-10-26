@@ -1,11 +1,7 @@
-import React from 'react'
-
-type Props = {}
+type Props = {};
 
 function Hero({}: Props) {
-  return (
-    <div>Hero</div>
-  )
+  return <div>Hero</div>;
 }
 
-export default Hero
+export default Hero;
