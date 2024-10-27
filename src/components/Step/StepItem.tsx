@@ -1,12 +1,28 @@
-import { Step } from '../../@types/step.type';
+import { useState } from 'react';
+import classNames from 'classnames';
+import { Step } from '~/@types/step.type';
 
 type Props = {
   step: Step;
 };
 
 function StepItem({ step }: Props) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
   return (
-    <div className='rounded border border-solid border-charcoalBlue p-4 tablet:p-6 laptop:p-8'>
+    <div
+      onMouseEnter={() => handleMouseEnter()}
+      onMouseLeave={() => handleMouseLeave()}
+      className={classNames(
+        'rounded border border-solid border-charcoalBlue p-4 tablet:p-6 laptop:p-8',
+        {
+          'border-ghostWhite': isHovered
+        }
+      )}
+    >
       <div className='mb-6 tablet:mb-9 desktop:mb-12'>
         <div className='relative mx-auto flex h-[65px] w-[65px] items-center justify-center rounded-[2px] bg-primaryConicGradient tablet:mx-0 tablet:h-[80px] tablet:w-[80px] laptop:h-[92px] laptop:w-[92px]'>
           <div className='border-["rgba(255, 255, 255, 0.2)"] absolute right-0 top-0 h-full w-full rounded-[2px] border-solid bg-layer2Gradient bg-blend-overlay backdrop-blur-[10px]' />

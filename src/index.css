@@ -56,3 +56,27 @@ html {
   font-size: 16px;
 }
 
+@layer utilities {
+  .border-gradient-tier-info {
+    border: 0.69px solid;
+    border-image-source: linear-gradient(
+      179.03deg,
+      rgba(255, 255, 255, 0.8) 0.83%,
+      rgba(207, 207, 207, 0) 47.54%,
+      rgba(255, 255, 255, 0.8) 99.17%
+    );
+    border-image-slice: 1;
+  }
+
+  .backdrop-blur-tier-info {
+    backdrop-filter: blur(28.32874870300293px);
+  }
+
+  .center-tier-info {
+    transform: translateX(-60px);
+  }
+
+  .align-last-tier-info {
+    transform: translateX(-120px);
+  }
+}

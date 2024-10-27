@@ -1,5 +1,5 @@
-import StepItem from './StepItem';
-import { Step } from '../../@types/step.type';
+import { Step } from '~/@types/step.type';
+import StepItem from '~/components/Step/StepItem';
 
 type Props = {};
 

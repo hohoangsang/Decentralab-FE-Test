@@ -1,4 +1,4 @@
-import RightArrow from '../Arrow/RightArrow';
+import RightArrow from '~/components/Arrow/RightArrow';
 
 type Props = {};
 
