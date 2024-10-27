@@ -42,7 +42,7 @@ function Hero({}: Props) {
     <section className='w-full bg-heroBgGradient'>
       <div className='mx-auto max-w-maxWidthSection'>
         <div className='mx-[2rem] grid grid-cols-1 desktop:mx-0 desktop:grid-cols-2 extraLarge:gap-[300px]'>
-          <div className='mx-auto my-[2rem] max-w-[600px] desktop:my-auto extraLarge:max-w-[840px]'>
+          <div className='mx-auto my-[2rem] max-w-[600px] desktop:my-auto desktop:ml-[2rem] extraLarge:max-w-[840px]'>
             <h2 className='mb-2 max-w-[800px] text-center font-primaryBold text-[1.5rem] leading-6 text-ghostWhite tablet:mb-4 tablet:text-[2rem] tablet:leading-primaryLineHeight laptop:text-[3rem] desktop:text-left'>
               Unlock Rewards with the Copin Referral Program
             </h2>
@@ -60,7 +60,7 @@ function Hero({}: Props) {
           </div>
 
           <div className='w-full tablet:block hidden'>
-            <div className='desktop:ml-auto mx-auto relative my-[32px] tablet:h-[500px] h-[400px] max-w-[756px]'>
+            <div className='desktop:ml-auto desktop:mr-[2rem] mx-auto relative my-[32px] tablet:h-[500px] h-[400px] max-w-[756px]'>
               <div className='absolute right-0 top-0 w-full'>
                 <img
                   srcSet='/images/dashed-line.png 2x'
