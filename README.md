@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Decentralab - FE - TEST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website has been converted from [Figma](https://www.figma.com/design/xm1himvdeS6WxAQZAzNsvK/FE-Test?node-id=1-155&node-type=frame&t=p7KZMvnhDtbifonM-0)
 
-Currently, two official plugins are available:
+### Technologies used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML5
+- CSS3
+- JavaScript
+- ReactJS
 
-## Expanding the ESLint configuration
+### Installation and Run Guide for the Website
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Note: The software requires a Node.js environment, version 20.3.0 or higher.
 
-- Configure the top-level `parserOptions` property like this:
+Step 1: Clone the source code from the GitHub repository by running the following command:
 
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+git clone https://github.com/hohoangsang/Decentralab-FE-Test.git
+```
+Step 2: Change the directory to the Decentralab-FE-Test folder using the following command:
+
+```js
+cd Decentralab-FE-Test
+```
+Step 3: Install the necessary libraries for the project, as specified in the package.json file, by running the following command:
+
+```js
+npm i
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Step 4: Once the necessary packages have been installed, you can run the project in the browser using the following command:
 
 ```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+npm run dev
 ```
