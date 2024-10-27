@@ -2,6 +2,8 @@
 
 This website has been converted from [Figma](https://www.figma.com/design/xm1himvdeS6WxAQZAzNsvK/FE-Test?node-id=1-155&node-type=frame&t=p7KZMvnhDtbifonM-0)
 
+Link vercel: [https://decentralab-fe-test.vercel.app/](https://decentralab-fe-test.vercel.app/)
+
 ### Technologies used:
 
 - HTML5
